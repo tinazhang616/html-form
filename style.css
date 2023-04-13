@@ -1,0 +1,11 @@
+.your-name,.your-email,.your-message,.your-fieldset {
+    margin: 10px;
+}
+.your-name input,.your-email input, .your-message textarea, .your-fieldset legend   {
+    width:100%;
+}
+/* .your-email input {
+    width: 100%;
+
+} */
+

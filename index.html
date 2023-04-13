@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head> 
+
+  <body>
+    <main>
+      <form>
+        <div class="your-name">
+          <label for="name">Name</label>
+          <input 
+          id="name" 
+          type="text" 
+          name="name" 
+          autofocus="on"
+          width="100" />
+        </div>
+        <div class="your-email">
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email" />
+        </div>
+        <div class="your-message">
+          <label for="form-message">Your message:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            required
+            maxlength="200"
+            rows="10"
+          ></textarea>
+          <div class="your-fieldset">
+            <fieldset>
+                <legend>All the Things You Like</legend>
+                <div>
+                    <input name="noodles" type="checkbox" id="noodles" />
+                    <label for="noodles">Noodles</label>
+                </div>
+                <div>
+                    <input name="dumplings" type="checkbox" id="dumplings" />
+                    <label for="dumplings">Dumplings</label>
+                </div>
+                <div>
+                    <input name="fryed-rice" type="checkbox" id="fryed-rice" />
+                    <label for="fryed-rice">Fryed Rice</label>
+                </div>
+                <div>
+                    <input name="chicken-soup" type="checkbox" id="chicken-soup" />
+                    <label for="chicken-soup">Chicken Soup</label>
+                </div>
+              </fieldset>
+          </div>
+      </form>
+    </main>
+  </body>
+</html>
